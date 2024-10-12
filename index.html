@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sitesi Başlığı</title>
+    <link rel="stylesheet" href="style.css"> <!-- CSS Bağlantısı -->
+</head>
+
+<body onload="updateClock(); startSlideshow();">
+    <!-- Başlık (Header) -->
+    <div class="header">
+        <img src="logo.png" alt="Logo">
+        <h1>WEB SİTESİ BAŞLIĞI</h1>
+    </div>
+
+    <!-- Ana İçerik (Header ve Footer hariç her şey burada) -->
+    <div class="main-content-wrapper">
+        <div class="main-content">
+            <!-- Flex Container -->
+            <div class="content-container">
+                <!-- Haber Metni -->
+                <div class="news">
+                    <h2>Haber</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse blanditiis ipsum amet mollitia dolores rerum eum, excepturi repellat? Quia architecto totam ex maiores vel illo praesentium sint. Laboriosam, neque dolore!</p>
+                </div>
+
+                <!-- Hareketli Fotoğraf -->
+                <div class="main">
+                    <h2>HAREKETLİ FOTOĞRAF</h2>
+                    <img id="slideshow" src="images/img1.jpg" alt="Hareketli Fotoğraf"> <!-- Slideshow Resmi -->
+                    <div class="description">O ANKİ FOTOĞRAFIN AÇIKLAMASI</div>
+                </div>
+
+                <!-- Tablolar ve Saat -->
+                <div class="side">
+                    <div class="tables">
+                        <h2>TABLOLAR</h2>
+                    </div>
+                    <div class="clock">
+                        <div id="clock">SAAT</div> <!-- Canlı saat ve tarih burada görüntülenecek -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Duyurular (Footer) -->
+    <div class="footer">
+        <h2>DUYURULAR</h2>
+        <marquee>HAREKETLİ YAZI</marquee> <!-- Kayan yazı için <marquee> etiketi -->
+    </div>
+
+    <script src="script.js"></script> <!-- JS Bağlantısı -->
+</body>
+</html>
